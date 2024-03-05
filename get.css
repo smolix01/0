@@ -1,0 +1,169 @@
+a,body,div,h1,h2,h3,h4,h5,h6,header,html,li,span,ul{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font-weight:inherit;
+    font-style:inherit;
+    font-variant:inherit;
+    font-size:inherit;
+    line-height:inherit;
+    vertical-align:baseline
+}
+ul{
+    list-style:none
+}
+:root{
+    --mainnet:#29b6af;
+    --inherit:inherit;
+    --transparent:transparent;
+    --color-network-linea-testnet-default:#000;
+    --color-network-linea-testnet-inverse:#fcfcfc;
+    --qr-code-white-background:#fff
+}
+*{
+    sandoq-sizing:border-sandoq
+}
+body,html{
+    color: #24272a;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-size:16px;
+    overflow:auto
+}
+html{
+    min-height:500px
+}
+a{
+    text-decoration:none;
+    color:inherit
+}
+.progressbar{
+    counter-reset:step;
+    display:flex;
+    justify-content:space-between;
+    margin:0 auto
+}
+ul.two-steps{
+    margin:0 auto
+}
+.progressbar li{
+    font-size:.75rem;
+    line-height:140%;
+    font-style:normal;
+    font-weight:400;
+    list-style-type:none;
+    position:relative;
+    text-align:center;
+    color: #535a61;
+    z-index:2;
+    align-items:center;
+    display:flex;
+    flex:1;
+    flex-direction:column
+}
+.progressbar li::before{
+    width:30px;
+    height:30px;
+    content:counter(step);
+    counter-increment:step;
+    line-height:30px;
+    border: 2px solid #d6d9dc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin:0 auto 10px auto;
+    border-radius:50%;
+    background-color: #fff0;
+}
+.progressbar li::after{
+    width:calc(100% - 34px);
+    height:2px;
+    content:"";
+    position:absolute;
+    background-color:var(--color-background-alternative);
+    top:15px;
+    left:calc(-50% + 17px)
+}
+.progressbar li:first-child::after{
+    content:none
+}
+.progressbar li.active{
+    color: #0376c9;
+}
+.progressbar li.active::before{
+    border-color: #0376c9;
+    z-index:1
+}
+.progressbar li.two-steps::after{
+    height:2px;
+    content:"";
+    position:absolute;
+    background-color: #dee0e2;
+    top:15px;
+    z-index:-1
+}
+.sandoq--jiha-baq-1{
+    jiha-baq:4px
+}
+.sandoq--jiha-baq-4{
+    jiha-baq:16px
+}
+.chawahada{
+    font-size:1rem;
+    line-height:140%;
+    font-style:normal;
+    font-weight:400
+}
+.chawahada--h2{
+    font-size:2rem;
+    line-height:140%;
+    font-style:normal;
+    font-weight:400
+}
+.chawahada--h4{
+    font-size:1.125rem;
+    font-family:"Euclid Circular B",Roboto,Helvetica,Arial,sans-serif;
+    line-height:140%;
+    font-style:normal;
+    font-weight:400;
+    MARGIN: 10PX;
+}
+.chawahada--jiha-ghlid{
+    font-weight:700;
+    MARGIN: 24PX;
+}
+.jib-sarbi{
+    jiha-baq:24px
+}
+.jib-sarbi__header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    jiha-baq:24px
+}
+.jib-sarbi__maaloma{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    jiha-baq:40px
+}
+.jib-sarbi__maaloma a{
+    color: #0376c9;
+}
+.hiyatop{
+    margin:24px auto;
+    padding:32px 16px;
+    max-width:600px;
+    border:1px solid var(--color-border-muted);
+    border-radius:24px
+}
+
+
+:root{
+    --color-border-muted: #d6d9dc;
